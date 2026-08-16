@@ -4,14 +4,14 @@ This project was developed using Arduino Uno and Tinkercad to control four DC mo
 The system performs a programmed movement sequence and uses an HC-SR04 Ultrasonic Sensor and a Servo Motor to detect and avoid obstacles.
 
 
-⸻
+---
 
 
 Live Simulation
 
 
 
-⸻
+---
 
 
 Task
@@ -31,7 +31,7 @@ The system moves backward briefly.
 The motors change direction to avoid the obstacle.
 
 
-⸻
+---
 
 
 Components Used
@@ -45,7 +45,7 @@ Micro Servo Motor
 Jumper Wires
 
 
-⸻
+---
 
 
 Circuit Connections
@@ -83,7 +83,7 @@ ECHO
 D12
 
 
-⸻
+---
 
 
 System Operation
@@ -94,7 +94,7 @@ During operation, the ultrasonic sensor measures the distance in front of the sy
 When an obstacle is detected at 10 cm or less, the motors stop immediately. The servo motor scans the surrounding area, and the system performs an avoidance movement before continuing.
 
 
-⸻
+---
 
 
 Screenshots
@@ -103,7 +103,7 @@ Simulation Running
 Schematic View
 
 
-⸻
+---
 
 
 Arduino Code
@@ -111,7 +111,7 @@ The complete Arduino source code is available in:
 four_dc_motors_obstacle_avoidance.ino
 
 
-⸻
+---
 
 
 Project Result
@@ -128,7 +128,7 @@ Controlled the servo motor to assist with obstacle avoidance.
 Completed the programmed movement sequence successfully.
 
 
-⸻
+---
 
 
 Files Included
@@ -144,10 +144,16 @@ Arduino-4-DC-Motors
     └── Schematic.jpg
 
 
-⸻
+---
 
 
 Tools Used
 Arduino Uno
 Arduino C/C++
 Autodesk Tinkercad
+
+---
+
+# Author
+
+Turki Alkhelaiwi For Smart Methods Summer Training
