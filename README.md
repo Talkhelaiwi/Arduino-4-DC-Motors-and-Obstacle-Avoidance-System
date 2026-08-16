@@ -1,157 +1,151 @@
-Arduino 4 DC Motors and Obstacle Avoidance System
-Project Overview
+# Arduino 4 DC Motors and Obstacle Avoidance System
+
+## Project Overview
+
 This project was developed using Arduino Uno and Tinkercad to control four DC motors using an L293D Motor Driver.
-The system performs a programmed movement sequence and uses an HC-SR04 Ultrasonic Sensor and a Servo Motor to detect and avoid obstacles.
 
-
----
-
-
-Live Simulation
-
-
+The system performs forward, backward, right, and left movements. It also uses an HC-SR04 Ultrasonic Sensor and a Servo Motor to detect and avoid obstacles.
 
 ---
 
+## Live Simulation
 
-Task
-The project consists of two main parts:
-Part 1: DC Motor Control
+[Tinkercad Simulation](ADD-YOUR-TINKERCAD-LINK-HERE)
+
+---
+
+## Task
+
+### Part 1: DC Motor Control
+
 The four DC motors perform the following sequence:
-Move forward for 30 seconds.
-Move backward for 60 seconds.
-Turn right and left alternately for 60 seconds.
-Stop automatically after completing the sequence.
-Part 2: Obstacle Detection and Servo Control
-The HC-SR04 Ultrasonic Sensor continuously measures the distance in front of the system.
+
+- Move forward for 30 seconds
+- Move backward for 60 seconds
+- Turn right and left alternately for 60 seconds
+- Stop automatically after completing the sequence
+
+### Part 2: Obstacle Detection
+
+The HC-SR04 Ultrasonic Sensor measures the distance in front of the system.
+
 If an obstacle is detected at a distance of 10 cm or less:
-The four DC motors stop.
-The servo motor rotates to scan the surrounding area.
-The system moves backward briefly.
-The motors change direction to avoid the obstacle.
 
-
----
-
-
-Components Used
-Arduino Uno R3
-Breadboard
-4 × DC Motors
-L293D Motor Driver
-HC-SR04 Ultrasonic Sensor
-Micro Servo Motor
-9V Battery
-Jumper Wires
-
+- The DC motors stop
+- The servo motor rotates
+- The system changes direction to avoid the obstacle
 
 ---
 
+## Components Used
 
-Circuit Connections
-L293D Motor Driver
-Connection
-Arduino Pin
-IN1
-D3
-IN2
-D2
-IN3
-D4
-IN4
-D5
-The four DC motors are connected as two motor pairs to the L293D outputs.
-Servo Motor
-Servo Connection
-Connection
-Signal
-D10
-VCC
-5V
-GND
-GND
-HC-SR04 Ultrasonic Sensor
-Sensor Pin
-Arduino Connection
-VCC
-5V
-GND
-GND
-TRIG
-D11
-ECHO
-D12
-
+- Arduino Uno R3
+- Breadboard
+- 4 × DC Motors
+- L293D Motor Driver
+- HC-SR04 Ultrasonic Sensor
+- Micro Servo Motor
+- 9V Battery
+- Jumper Wires
 
 ---
 
+## Circuit Connections
 
-System Operation
-The system starts with the servo motor positioned at 90°.
-The four DC motors move forward for 30 seconds and then reverse direction for 60 seconds.
-After that, the motors alternate between right and left turns for a total of 60 seconds.
-During operation, the ultrasonic sensor measures the distance in front of the system.
-When an obstacle is detected at 10 cm or less, the motors stop immediately. The servo motor scans the surrounding area, and the system performs an avoidance movement before continuing.
+### L293D Motor Driver
 
+| L293D Input | Arduino Pin |
+|---|---|
+| IN1 | D3 |
+| IN2 | D2 |
+| IN3 | D4 |
+| IN4 | D5 |
+
+### Servo Motor
+
+| Connection | Arduino Pin |
+|---|---|
+| Signal | D10 |
+| VCC | 5V |
+| GND | GND |
+
+### HC-SR04 Ultrasonic Sensor
+
+| Sensor Pin | Arduino Pin |
+|---|---|
+| VCC | 5V |
+| GND | GND |
+| TRIG | D11 |
+| ECHO | D12 |
 
 ---
 
+## Movement Sequence
 
-Screenshots
-Circuit Design
-Simulation Running
-Schematic View
+1. Forward for 30 seconds
+2. Backward for 60 seconds
+3. Right and left alternately for 60 seconds
+4. Stop automatically
 
+If an obstacle is detected within 10 cm, the motors stop and the servo motor moves to help avoid the obstacle.
 
 ---
 
+## Screenshots
 
-Arduino Code
-The complete Arduino source code is available in:
+### Circuit Design
+
+![Circuit Design](screenshots/Circuit.jpg)
+
+### Simulation Running
+
+![Simulation Running](screenshots/Simulation.jpg)
+
+### Schematic View
+
+![Schematic View](screenshots/Schematic.jpg)
+
+---
+
+## Arduino Code
+
+The complete Arduino code is available in:
+
 four_dc_motors_obstacle_avoidance.ino
 
+---
+
+## Project Result
+
+- Four DC motors were successfully controlled
+- Forward movement for 30 seconds
+- Backward movement for 60 seconds
+- Right and left movement for 60 seconds
+- Successful distance measurement using HC-SR04
+- Obstacle detection at 10 cm or less
+- Servo motor control for obstacle avoidance
+- Successfully tested using Tinkercad
 
 ---
 
+## Files Included
+four_dc_motors_obstacle_avoidance.ino
+README.md
+Simulation.mp4
 
-Project Result
-The project was successfully implemented and tested using Tinkercad.
-The final system successfully:
-Controlled four DC motors.
-Moved forward for 30 seconds.
-Moved backward for 60 seconds.
-Alternated between right and left movements for 60 seconds.
-Measured distance using the HC-SR04 sensor.
-Detected obstacles at 10 cm or less.
-Stopped the DC motors when an obstacle was detected.
-Controlled the servo motor to assist with obstacle avoidance.
-Completed the programmed movement sequence successfully.
-
+screenshots/
+├── Circuit.jpg
+├── Simulation.jpg
+└── Schematic.jpg
 
 ---
 
+## Tools Used
 
-Files Included
-Arduino-4-DC-Motors
-│
-├── four_dc_motors_obstacle_avoidance.ino
-├── README.md
-├── Simulation.mp4
-│
-└── screenshots
-    ├── Circuit.jpg
-    ├── Simulation.jpg
-    └── Schematic.jpg
-
-
----
-
-
-Tools Used
-Arduino Uno
-Arduino C/C++
-Autodesk Tinkercad
-
+- Arduino Uno
+- Arduino C/C++
+- Tinkercad
+- GitHub
 ---
 
 # Author
