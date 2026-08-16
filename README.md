@@ -91,19 +91,16 @@ If an obstacle is detected within 10 cm, the motors stop and the servo motor mov
 
 ---
 
+
 ## Screenshots
 
-### Circuit Design
+### Before Simulation
 
-![Circuit Design](screenshots/Circuit.jpg)
+![Before Simulation](photo123.jpg)
 
-### Simulation Running
+### During Simulation
 
-![Simulation Running](screenshots/Simulation.jpg)
-
-### Schematic View
-
-![Schematic View](screenshots/Schematic.jpg)
+![During Simulation](after123.jpg)
 
 ---
 
