@@ -90,8 +90,6 @@ If an obstacle is detected at a distance of 10 cm or less:
 If an obstacle is detected within 10 cm, the motors stop and the servo motor moves to help avoid the obstacle.
 
 ---
-
-
 ## Screenshots
 
 ### Before Simulation
